@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Call my API
         run: |
-          curl -X POST "https://staffpro.onrender.com/Api/Staff/login" \
-          -H "Content-Type: application/json" \
-          -d '{"Email": "demo@example.com", "Password": "demoPassword123"}'
+        curl -f -X POST "https://staffpro.onrender.com/Api/Staff/login" \
+-H "Content-Type: application/json" \
+-d '{"Email": "demo@example.com", "Password": "demoPassword123"}'
