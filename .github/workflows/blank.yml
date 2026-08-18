@@ -2,7 +2,6 @@ name: Hit API Every 9 Minutes (10 AM to 9 PM)
 
 on:
   schedule:
-
     - cron: '*/9 4-15 * * *'
   workflow_dispatch:
 
@@ -12,6 +11,6 @@ jobs:
     steps:
       - name: Call my API
         run: |
-        curl -f -X POST "https://staffpro.onrender.com/Api/Staff/login" \
--H "Content-Type: application/json" \
--d '{"Email": "demo@example.com", "Password": "demoPassword123"}'
+          curl -f -X POST "https://staffpro.onrender.com/Api/Staff/login" \
+          -H "Content-Type: application/json" \
+          -d '{"Email": "abcd@gmail.com", "Password": "abcd"}'
